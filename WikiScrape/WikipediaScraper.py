@@ -21,7 +21,6 @@ def simple_get(url):
         log_error('Error during requests at {0} : {1}'.format(url,str(e)))
         return None
 
-
 def is_good_response(resp):
     """
     Returns True if the response seems to be HTML, False otherwise
@@ -52,7 +51,6 @@ def get_title(html):
             titleDoc.write("\n   V   \n")
         titleDoc.close()
 
-
 def getLink(html, toFind):
     links =[]
     for link in html.find_all("a", href=True):
@@ -72,10 +70,6 @@ def getLink(html, toFind):
         return html
     print(links[randNum-1])
     return links[randNum-1]
-
-        
-
-
 
 
 def main(startUrl,toFind):
