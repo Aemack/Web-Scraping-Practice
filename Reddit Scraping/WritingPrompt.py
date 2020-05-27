@@ -2,7 +2,7 @@ import praw
 import random
 import tkinter as tk
 
-reddit = praw.Reddit(client_id='ClEVxKQPq3v3LQ', client_secret='g0bPtnlJrhmbVEAMzGPPqZLswfM', user_agent='WritingPrompter')
+reddit = praw.Reddit(client_id='client_id', client_secret='client-secret', user_agent='WritingPrompter')
 
 root = tk.Tk()
 
